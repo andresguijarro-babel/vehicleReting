@@ -1,2 +1,4 @@
-package com.babel.bootcampBack.vehicleRenting.exceptions;public class WrongLenghtFieldException {
+package com.babel.bootcampBack.vehicleRenting.exceptions;
+
+public class WrongLenghtFieldException extends RequestApiValidationException{
 }

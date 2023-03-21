@@ -1,4 +1,5 @@
 package com.babel.bootcampBack.vehicleRenting.exceptions;
 
-public class InputValidException {
+public class RequestApiValidationException extends Exception{
+
 }
