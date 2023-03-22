@@ -15,7 +15,6 @@ public class Persona {
     private int scoring;
     private Date fechaScoring;
 
-
     //getters y setters
 
 
@@ -114,4 +113,5 @@ public class Persona {
     public void setDireccionDomicilioSameAsNotificacion(boolean direccionDomicilioSameAsNotificacion) {
         this.direccionDomicilioSameAsNotificacion = direccionDomicilioSameAsNotificacion;
     }
+
 }
