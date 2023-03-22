@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class Renta {
     private int rentaId;
-    private int personaId;
-    private int profesionId;
+    private Persona persona;
+    private Profesion profesion;
     private int anio;
     private int importe;
     private int isCuentaPropia;
@@ -22,20 +22,20 @@ public class Renta {
         this.rentaId = rentaId;
     }
 
-    public int getPersonaId() {
-        return personaId;
+    public Persona getPersona() {
+        return persona;
     }
 
-    public void setPersonaId(int personaId) {
-        this.personaId = personaId;
+    public void setPersona(Persona persona) {
+        this.persona = persona;
     }
 
-    public int getProfesionId() {
-        return profesionId;
+    public Profesion getProfesion() {
+        return profesion;
     }
 
-    public void setProfesionId(int profesionId) {
-        this.profesionId = profesionId;
+    public void setProfesion(Profesion profesion) {
+        this.profesion = profesion;
     }
 
     public int getAnio() {
