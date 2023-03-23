@@ -1,6 +1,7 @@
 package com.babel.bootcampBack.vehicleRenting.services.impl;
 
 
+import com.babel.bootcampBack.vehicleRenting.exceptions.RequestApiValidationException;
 import com.babel.bootcampBack.vehicleRenting.exceptions.RequiredMissingFieldException;
 import com.babel.bootcampBack.vehicleRenting.exceptions.WrongLenghtFieldException;
 import com.babel.bootcampBack.vehicleRenting.models.Persona;
@@ -33,6 +34,14 @@ public class PersonaServiceImpl implements PersonaService {
         return persona;
     }
 
+    @Override
+    public Persona getPerson(int idPersona) throws RequestApiValidationException {
+        if (idPersona<0){
+            throw new RequestApiValidationException();
+        }
+        return null;
+    }
+
     private Persona addPersonaDireccion(Persona persona){
         this.direccionMapper.insertDireccion(persona.getDireccionDomicilio());
 
@@ -58,4 +67,7 @@ public class PersonaServiceImpl implements PersonaService {
             throw new WrongLenghtFieldException();
         }
     }
+
+
+
 }
